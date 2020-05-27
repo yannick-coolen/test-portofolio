@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/Favicon/favicon.ico">
+    <title>Exam assignment | Contact</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="#about">Exam assignment | Contact</h1>
+        <nav>
+            <h2>Navigator</h2>
+            <div class="grid-nav">
+                <a href="index.html" class="grid-item logo">
+                    <img src="img/pictures/Logo.png" alt="Logo">
+                </a>
+                <div class="grid-item nav">
+                    <ul>
+                        <li class="dropdown" onclick="myFunction()">
+                            <section>
+                                <h3>Home</h3>
+                            <a href="javascript:void(0)" class="dropbtn">Home</a>
+                            <div id="myDropdown" class="dropdown-content">
+                                <section>
+                                    <h4>Main</h4>
+                                    <a href="index.html">Main</a>
+                                </section>
+                                <section>
+                                    <h4>Movies and music</h4>
+                                    <a href="index.html#content">Movies and music</a>
+                                </section>
+                                <section>
+                                    <h4>Pictures and videios</h4>
+                                    <a href="index.html#video">Pictures and videos</a>
+                                </section>
+                                <section>
+                                    <h4>Wildcards</h4>
+                                    <a href="index.html#wildcards">Wildcards</a>
+                                </section>
+                            </div>
+                        </section>
+                        </li>
+                        <li>
+                            <section>
+                                <h3>About</h3>
+                                <a href="about.html">About</a>
+                            </section>
+                        </li>
+                        <li>
+                            <section>
+                                <h3>Art</h3>
+                                <a href="art.html">Art</a>
+                            </section>
+                        </li>
+                        <li>
+                            <section>
+                                <h3>Links</h3>
+                                <a href="links.html">Links</a>
+                            </section>
+                        </li>
+                        <li>
+                            <section>
+                                <h3>Contact</h3>
+                                <a href="contact.html">Contact</a>
+                            </section>    
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <article class="grid-main">
+        <h2>Main</h2>
+        <form action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST" class="grid-form">
+            <section class="formbox">
+                <h3>Invoergegevens</h3>
+                <p>Enter your personal details here:</p>
+             <table>
+                    <tr>
+                        <td>Fullname:</td>
+                        <td><input type="text" pattern="[A-Za-z]+\s[A-Za-z]+" name="Naam" placeholder="Your fullname" required></td>
+                    </tr>
+                    <tr>
+                        <td>Adress:</td>
+                        <td><input type="text" name="Adres" pattern="([A-Za-z]+\s[0-9]+)" placeholder="Street + housenumber"
+                                required></td>
+                    </tr>
+                    <tr>
+                        <td>Zipcode:</td>
+                        <td><input type="text" pattern="[0-9]{4}\s[A-z]{2}" name="Postcode" placeholder="1234 AZ"
+                                required></td>
+                    </tr>
+                    <tr>
+                        <td>Town:</td>
+                        <td><input type="text" pattern="[A-Za-z]+\s?[A-Za-z]+" name="Woonplaats" placeholder="Town of living" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phonenumber:</td>
+                        <td><input type="tel" pattern="[0-9]+" name="Telefoonnummer" placeholder="Only numbers"
+                                required></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="Emailadres"
+                                placeholder="example@gmail.com" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <textarea class="textarea" name="Qeustion" placeholder="Ask your querstion here"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <br>   
+                <button class="form-button">Send</button>   
+            </section>
+        </form>
+        <section class="grid-map">
+            <h3>Google maps</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2452.177654502906!2d4.315037215749064!3d52.076495779732696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b7224b6b57b7%3A0xba7d3b4948520d87!2sSpui%2C%20Den%20Haag!5e0!3m2!1snl!2snl!4v1586864227094!5m2!1snl!2snl"
+                id="GoogleMap"></iframe>
+        </section>
+        <button onclick="topFunction()" id="myBtn" title="Back to top">Top</button>
+    </article>
+    <footer>
+        <div class="grid-footer">
+            <section>
+                <h2>Footer</h2>
+                <p>&copy; copyright reserved: <span id="year"></span></p>
+            </section>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
